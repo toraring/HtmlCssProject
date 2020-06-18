@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+table{
+	border: 1px solid gray;
+	width: 500px;
+}
+tr,td,td{
+	border: 1px dotted gray;
+	
+}

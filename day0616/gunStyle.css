@@ -1,0 +1,66 @@
+@charset "utf-8";
+body{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+
+body,html{
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	background: url("../game/bg.png");
+}
+#sunban_wrapper{
+	width: 780px; margin: 50px auto;
+}
+#control_wrapper{
+	width: 300px; 
+	height: 420px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+
+.sunban{
+	height: 150px;
+	margin-bottom: 50px;
+	width: 800px;
+	background: url("../game/sunban.png") no-repeat center bottom;
+}
+
+.sunban li{
+	float: left; width: 120px; height: 120px; cursor: pointer;
+}
+
+.money li{
+	cursor: pointer; 
+}
+
+.gun{
+	width: 300px; height: 250px;
+	background: url("../game/gun.png");
+	cursor: pointer;
+	text-indent: -50px;
+}
+
+.gun:active {
+	background-position: bottom;
+}
+
+#msg{
+	position: absolute;
+	left: 600px;
+	top: 500px;
+	width: 500px;
+	height: 70px;
+	font-size: 20pt;
+	border: 10px solid cyan;
+	text-align: center;
+	padding-top: 20px;
+	clear: both; 
+}

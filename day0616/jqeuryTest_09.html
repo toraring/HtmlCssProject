@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.js"/></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"></link>
+<style type="text/css">
+ .nice{
+ 	color: blue;
+ 	font-size: 15pt;
+ 	background-color: orange;
+ 	border: 1px dotted magenta;
+ 	width: 200px;
+ 	height: 100px;
+ }
+</style>
+<script type="text/javascript">
+$(function(){
+	//동시에 2개이상의 스타일을 주려고 할 때
+	$('.hello').css({
+		'font-size' : '2em',
+		'color' : 'green'
+	});
+	$('.hello').css('background-color', '#ffffcc');
+	
+	//jquery에 이벤트 주는 방법
+	$('#btna').click(function(){
+		//diva라는 id를 가진 요소에 nice라는 class를 추가
+		$('#diva').addClass('nice');
+		$('#divb').addClass('nice');
+	});
+	
+	//제거 이벤트
+	$('#btnb').click(function() {
+		$('#diva').removeClass('nice');
+		$('#divb').removeClass('nice');
+	});
+	
+});
+</script>
+</head>
+<body>
+	<h3 class="hello">오늘은 즐거운 화요일</h3>
+	<p>Nice to meet you </p>
+	<b> 안녕하세요 </b>
+	
+	<span class="hi">Hello jquery </span>
+	<div class="hello">div_Happy</div>
+	
+	<div id="diva">div_A</div>
+	<div id="divb">div_B</div>
+	
+	<button class="btn btn-info" id="btna">클래스 추가</button>
+	<button class="btn btn-info" id="btnb">클래스 제거</button>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+p{
+	
+	font: 15px/2e, "나눔고딕"; width: 800px;	
+}
+p.box1{
+	background-color: #808000; padding: 20px;
+}
+p.box2{
+	background-color: #daa520; padding: 20px;
+	text-align: left;
+}
+li{
+	list-style: square;
+}

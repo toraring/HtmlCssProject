@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.js"/></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"></link>
+<style type="text/css">
+#pannel1, #pannel2, #pannel3, #flip1, #flip2{
+	padding: 5px;
+	font-size: 18pt;
+	text-align: center;
+	background-color: #ffffcc;
+	border-radius: 50px;
+}
+
+#pannel1, #pannel2, #pannel3{
+	padding: 50px;
+	display: none;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+	//flip1 출력이벤트
+	$('#flip1').click(function() {
+		$('#pannel1').slideDown(7000);
+		$('#pannel2').slideDown(7000);
+		$('#pannel3').slideDown(7000);
+	});
+	
+	//flip2 이벤트 5초동안 닫히게
+	$('#flip2').click(function() {
+		$('#pannel1').slideUp(5000);
+		$('#pannel2').slideUp(5000);
+		$('#pannel3').slideUp(5000);
+	});
+});
+
+</script>
+</head>
+<body>
+<div id="flip1"> 이미지를 열어요 </div>
+<div align="center">
+<img alt="pannel1" src="../img/bottle01.jpg">
+<img alt="pannel2" src="../img/bottle02.jpg">
+<img alt="pannel3" src="../img/bottle03.jpg">
+</div>
+<div id="flip2"> 이미지를 닫아요 </div>
+</body>
+</html>

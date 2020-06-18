@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.js"/></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"></link>
+
+</head>
+<body>
+<h2>Effect 함수들	</h2>
+<button id="btn1" class="btn btn-info"> hide </button>
+<button id="btn2" class="btn btn-info"> show </button>
+<button id="btn3" class="btn btn-info"> slide up </button>
+<button id="btn4" class="btn btn-info"> slide down </button>
+<button id="btn5" class="btn btn-info"> fade In </button>
+<button id="btn6" class="btn btn-info"> fade Out </button>
+<button id="btn7" class="btn btn-info"> fade To </button>
+
+<hr>
+<h1> 애니메이션 대상	</h1>
+<img alt="" src="../img/a01.png">
+<img alt="" src="../img/a02.png">
+
+<script type="text/javascript">
+//속도조절; 'slow', 'fast', 숫자
+//btn1 hide
+$("#btn1").click(function() {
+	$('h1').hide('slow');
+	$('img:eq(0)').hide('slow');
+	$('img:eq(1)').hide('fast');
+});
+//btn2 show
+$('#btn2').click(function() {
+	$('h1').show('slow');
+	$('img:eq(0)').show('slow');
+	$('img:eq(1)').show('fast');
+});
+//btn3 slideup
+$('#btn3').click(function () {
+	$('h1').slideUp();
+	$('img:eq(0)').slideUp(5000);
+	$('img:eq(1)').slideUp(5000);
+});
+//btn4 slidedown
+$('#btn4').click(function () {
+	$('h1').slideDown();
+	$('img:eq(0)').slideDown(3000);
+	$('img:eq(1)').slideDown(4000);
+});
+//btn5 fadein
+$('#btn5').click(function () {
+	$('h1').fadeIn();
+	$('img:eq(0)').fadeIn();
+	$('img:eq(1)').fadeIn(3000);
+});
+//btn6 fadeout
+$('#btn6').click(function() {
+	$('h1').fadeOut();
+	$('img:eq(0)').fadeOut('fast');
+	$('img:eq(1)').fadeOut('fast');
+});
+//btn7 fade to
+$('#btn7').click(function () {
+	var fade = true;
+	//투명도 
+	if(fade)
+	{ 
+		$('h1').fadeTo('slow', 0.2);
+		$('img:eq(0)').fadeTo('slow', 0.2);
+		$('img:eq(1)').fadeTo('slow', 0.2);
+	}
+	else
+	{
+		$('h1').fadeTo('slow', 1);
+		$('img:eq(0)').fadeTo('slow', 1);
+		$('img:eq(1)').fadeTo('slow', 1);
+	}
+	fade=!fade;
+});
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function test() {
+		/* 왠만하면 줄바꿈도 하지 말것.
+		대따옴표안에 대따옴표 필요하면 소따옴표로 표시할것 */
+		var str = "<font color = 'red' size = '5'>안녕하세여</font>"
+		out.innerHTML = str;
+	}
+</script>
+</head>
+<body>
+	<input type="button" value="click me" 
+	onclick="test()">
+	<br>
+	<div id = "out">
+	
+	</div>
+	<hr>
+	<img alt="" src="../Image/candle_on.jpg"
+	onmouseover="this.src='../Image/candle_off.jpg'"
+	onmouseout="this.src='../Image/candle_on.jpg'">
+</body>
+</html>

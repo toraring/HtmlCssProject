@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<!-- //div전용 -->
+<style type="text/css"> 
+#out{
+	position: absolute;
+	top: 50px;
+	border: 2px solid gray;
+	width: 350px;
+	height: 250px;
+	background-color: #87cefa;
+}
+</style>
+
+<script type="text/javascript">
+var rnd;
+var cnt = 0;
+
+window.onload = function() {
+	rnd = parseInt(Math.random()*100)+1;
+}
+
+function check(su) {
+	cnt++;
+	//난수와 비교해서 결과 출력
+	if(su>rnd)
+		out.innerHTML+=cnt + ":" + su + "보다 작습니다<br>";
+		else if(su < rnd)
+			out.innerHTML+=cnt + ":" + su + "보다 큽니다<br>";
+			else
+				{
+				out.innerHTML="<h4>축하합니다.. 정답은 " +rnd+ "입니다.</h4>"
+				//축하이미지
+				imge.src = "../img/C7.png";
+				}x
+	//실패할때 이미지
+	if(cnt>=10)
+		{
+		out.innerHTML = "<h4>다음기회에..</h4>";
+		imge.src = "../img/C8.png";
+		}
+	
+	//초기화(input창)
+	frm.w.value = '';
+	frm.num.focus();
+}
+</script>
+</head>
+<body>
+<!-- css안하면 div는 무쓸모 -->
+
+	<form action="#" name="frm" onsubmit="return false">
+		<b>숫자입력:	</b>
+		<input type="text" name="num" size="5"
+		onkeydown="if(event.keyCode == 13) check(value)">
+			
+	</form>
+	<!-- 숫자가 출력될 공간 -->
+	<div id = "out"></div>
+	
+	<!-- 이미지 출력될 공간 -->
+	<div style="position: absolute; top: 80px; left: 350px;">
+		<img alt="" src="" name="imge">
+	</div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.js"/></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"></link>
+<style type="text/css">
+.high_light_0{background-color: yellow;}
+.high_light_1{background-color: red;}
+.high_light_2{background-color: magenta;}
+.high_light_3{background-color: cyan;}
+.high_light_4{background-color: gray;}
+.high_light_5{background-color: blue;}
+</style>
+
+<script type="text/javascript">
+$(function () {
+	//버튼 a
+	/* $('#btna').click(function () {
+		//h3 태그만큼 반복
+		$('h3').each(function (index) {
+			
+			//alert(index);
+			$(this).addClass('higt_light' + index);
+		});
+	}); */
+	
+	//버튼 b
+	$('#btnb').click(function() {
+		$('h3').each(function (index) {
+			$(this).removeClass('high_light_' + index);
+		});
+	});
+	//버튼 a다시
+	$('#btna').click(function() {
+		$('h3').each(function (index) {
+			$(this).addClass('high_light_' + index);
+		});
+	});
+	
+});
+</script>
+</head>
+<body>
+<h3>background-color change!!</h3>
+<h3>background-color change!!</h3>
+<h3>background-color change!!</h3>
+<h3>background-color change!!</h3>
+<h3>background-color change!!</h3>
+<h3>background-color change!!</h3>
+
+<button id='btna' class="btn btn-danger"> color 변경 </button>
+<button id="btnb" class="btn btn-danger"> color 제거 </button	>
+</body>
+
+</html>

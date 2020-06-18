@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+/* 클래스는 여러군데 사용 가능
+id는 딱 한군데 적용. */
+.mbc{
+	color: magenta;
+}
+
+div.sbs{
+	/* 클래스가 sbs인 div에서만 실행 */
+	color: green; font-size: 20pt; 
+	width: 200px; height8: 50px;
+	border: 1px solid purple;
+}
+
+/* id가 kbs인 곳에만 적용 */
+#kbs{
+	position: absolute;
+	top: 400px;
+	left: 200px; width: 200px; height: 200px;
+	font-size: 20pt; padding-left: 20px;
+	padding-top: 30px; border: dotted 3px red;
+}
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+<div style="color: red; font-size: 15pt;
+background-color: yellow; width: 200px; height: 150px;">
+안녕하세요</div>
+<!-- position: absolute 절대적인 것. -->
+<div style="position: absolute; top: 200px; left: 300px;
+width: 200px; height: 100px; border: dotted 3px;">
+오늘은 즐거운 수요일</div>
+<div class="mbc">Happy day</div>
+<div class="mbc"> 오늘은 수요일 html 공부중 </div>
+<div class="sbs">자바 공부하는 중</div>
+<div id="kbs">생활코딩</div>
+</body>
+</html>

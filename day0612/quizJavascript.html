@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<style type="text/css">
+img{
+	width: 100px;
+	border: 10px solid cyan;
+}
+
+</style>
+<script type="text/javascript">
+window.onload = function () {
+	var imgs = document.getElementById("imgs");
+	var imgss = document.getElementById("imgss");
+	
+	B1.onclick = function() {
+		imgs.setAttribute("src","/HtmlCssProject/img/a01.png");
+		imgss.setAttribute("src","../img/a02.png");
+	}
+	B2.onclick = function() {
+		imgs.setAttribute("src","/HtmlCssProject/img/box.png");
+		imgss.setAttribute("src","../img/open.png");
+	}
+	B3.onclick = function() {
+		imgs.setAttribute("src","/HtmlCssProject/img/toy01.png");
+		imgss.setAttribute("src","../img/logo.png");
+	}
+}
+
+
+
+</script>
+
+</head>
+<body>
+
+<h4>절대주소를 이용한 이미지 </h4>
+<img alt="" src="/HtmlCssProject/img/toy01.png" id="imgs" >
+<hr>
+
+
+<h4>상대주소를 이용한 이미지 </h4>
+<img alt="" src="../img/logo.png" id="imgss" >
+
+
+<hr>
+<input type="button" value="변경1" class="mybtn" id="B1">
+<input type="button" value="변경2" class="mybtn" id="B2">
+<input type="button" value="원래대로" class="mybtn" id="B3">
+
+
+</body>
+</html>

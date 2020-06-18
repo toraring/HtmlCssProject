@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var food = ['딸기', '오렌지','사과','키위'];
+
+document.write('배열테스트<br>');
+
+for(var i = 0; i<food.length; i++)
+	{
+	document.write("food["+(i+1)+"]" + food[i]
+	+ "<br>");
+	}
+document.write("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
+
+</script>
+</head>
+<body>
+<h2>10개의 난수 출력</h2>
+<script type="text/javascript">
+	var rnd;
+	
+	for(var i = 1; i <= 10; i++)
+	{
+		rnd = parseInt(Math.random()*10)+1;
+		document.write('<h4>'+rnd+'</h4>')
+	}
+	
+	/* <h3> 자바스크립트 배열 선언법 </h3> */
+	var arr = new Array();
+	arr[0] = '장미';
+	arr[1] = '프레지아';
+	arr[2] = '수국';
+	arr[3] = '백합';
+	arr[4] = '튤립';
+	arr[0] = '장미';
+</script>
+	
+<script type="text/javascript">
+	for(var i=0; i<arr.length; i++)
+	{
+	document.write(arr[i]);
+	}
+	//초기값주고 컬러별로 출력
+	var arr2 = ['red', 'cyan','magenta','yellow','orange'];
+	
+	for(var i = 0; i < arr.length; i++)
+	{
+	document.write("<font color = '"+arr2[i]+"' size='5'>Hello</font><br>'");
+	}
+
+</script>	
+	
+
+
+</body>
+</html>

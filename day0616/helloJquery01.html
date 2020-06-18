@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.js"/></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"></link>
+<script type="text/javascript">
+$(document).ready(function(){
+	//document전체요소 선택'
+	//$ = jQuery
+	$("*").css("border","1px solid #ffcccc");
+	$('span').css("border","3px solid blue");
+	
+	//jQuery('#content').css('background-color','cyan');
+	$('#content').css('background-color','magenta');
+	$('.my').css('border','5px solid red');
+	
+});
+</script>
+
+</head>
+<body>
+<h2>jQuery에서 셀렉터를 사용해 처리	</h2>
+<div>
+	<div id="content">id값이 content인 divtag</div>
+</div>
+ <b>b1</b>
+ <span>span 1</span>
+ <span class="my">span2</span>
+</body>
+</html>

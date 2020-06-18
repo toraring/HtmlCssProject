@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.js"/></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"></link>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#hide').click(function() {
+		$('img').hide();
+	});
+	$('#show').click(function() {
+		$('img').show();
+	});
+});
+
+</script>
+</head>
+<body>
+<div align="center">
+	<img alt="" src="../img/cover.png"><br>
+
+	<button id="hide" class="btn btn-default"> Hide </button>
+	<button id="show" class="btn btn-default"> Show </button>
+</div>
+</body>
+</html>
